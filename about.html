@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>s0colas</title>
+    <!-- icon-->
+    <link rel="icon" type="image/x-icon" href="assets/ico.png" />
+    <!-- https://www.w3schools.com/w3css/tryw3css_templates_photo.htm -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1 {font-family: "Montserrat", sans-serif}
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+    </style>
+    </head>
+    <body>
+
+    <!-- Sidebar -->
+      <!-- Links (sit on top) -->
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-white">
+        <div class="w3-col s3">
+          <a href="index.html" class="w3-button w3-block ">HOME</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="about.html" class="w3-button w3-block">ABOUT</a>
+        </div>
+    
+      </div>
+    </div>
+    
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+    <!-- Header -->
+    <div class="w3-opacity">
+        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+        <div class="w3-clear"></div>
+
+        </div>
+
+    <!--  NHINOTE:  Personal-->
+    <div id="top">
+        <!-- Photo Grid -->
+        <div class="w3-row-padding" id="myGrid" style="margin-top:128px">
+            <div class="w3-half center">
+                <img src="assets/img/portfolio/14.jpg" style="width:70%">
+            </div>
+            <div class="w3-half">
+            <!--profile.-->
+            <h2 style= "font-family:monospace">printf("Hello, World!");</h2>
+            <p > <!--made the section split into two column, make font sans serif, make colors different, make bg span over 1-- of the screen.-->
+                I'm a software dev who loves to draw!
+                <br>
+                <br>
+                I create for things I like and here to have a good time. My dream is to make fan art pieces for all the series that I love!
+                <br><br>
+                In my free time, I enjoy reading, gaming, and traveling.
+                <br><br><br>
+
+                <br>
+                <br>
+                <br>
+                You can contact me at <b>kneeillust@gmail.com</b>.
+                <br><br>
+                
+
+                <br>
+
+            </p>
+        </div>
+            <!---->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32  w3-center w3-opacity w3-xlarge" style="margin-top:64px"> 
+      <a href="https://www.twitter.com/s0colas"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/s0colas"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.tumblr.com/s0colas"><i class="fa fa-tumblr w3-hover-opacity"></i></a>  
+      <a href="https://ko-fi.com/s0colas">ko-fi</a>
+      <a href="https://www.inprnt.com/profile/kneeprint/">INPRINT</a>
+
+      <!--<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+    </footer>
+     
+    <script>
+    // Toggle grid padding
+    function myFunction() {
+      var x = document.getElementById("myGrid");
+      if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+      } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+      }
+    }
+    
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "100%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+    
+    </body>
+    </html>
+
