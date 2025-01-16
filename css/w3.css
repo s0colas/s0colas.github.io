@@ -1,7 +1,16 @@
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* My own additions */
+img.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  img.fade-in.loaded {
+    opacity: 1;
+  }
 
+  
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}

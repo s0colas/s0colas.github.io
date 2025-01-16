@@ -7,6 +7,7 @@
     <!-- https://www.w3schools.com/w3css/tryw3css_templates_photo.htm -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/w3.css">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -28,6 +29,9 @@
         <div class="w3-col s3">
           <a href="about.html" class="w3-button w3-block">ABOUT</a>
         </div>
+        <div class="w3-col s3">
+          <a href="gallery.html" class="w3-button w3-block">GALLERY</a>
+        </div>
     
       </div>
     </div>
@@ -48,22 +52,22 @@
         <!-- Photo Grid -->
         <div class="w3-row-padding" id="myGrid" style="margin-top:128px">
             <div class="w3-half center">
-                <img src="assets/img/portfolio/14.jpg" style="width:70%">
+                <img src="assets/img/portfolio/34.jpeg" style="width:70%" class="fade-in">
             </div>
             <div class="w3-half">
             <!--profile.-->
             <h2 style= "font-family:monospace">printf("Hello, World!");</h2>
             <p > <!--made the section split into two column, make font sans serif, make colors different, make bg span over 1-- of the screen.-->
-                I'm a software dev who loves to draw!
+                My name is Knee! I'm a computer science person who loves to draw!
                 <br>
                 <br>
-                I create for things I like and here to have a good time. My dream is to make fan art pieces for all the series that I love!
+                I create for games, books, or shows I like and I hope to share my enthusiasm with people of similiar interests. 
+
+            
                 <br><br>
-                In my free time, I enjoy reading, gaming, and traveling.
+                Thanks for visiting!
                 <br><br><br>
 
-                <br>
-                <br>
                 <br>
                 You can contact me at <b>kneeillust@gmail.com</b>.
                 <br><br>
@@ -79,37 +83,39 @@
     </div>
     
     <!-- Footer -->
-    <footer class="w3-container w3-padding-32  w3-center w3-opacity w3-xlarge" style="margin-top:64px"> 
-      <a href="https://www.twitter.com/s0colas"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-      <a href="https://www.instagram.com/s0colas"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-      <a href="https://www.tumblr.com/s0colas"><i class="fa fa-tumblr w3-hover-opacity"></i></a>  
-      <a href="https://ko-fi.com/s0colas">ko-fi</a>
-      <a href="https://www.inprnt.com/profile/kneeprint/">INPRINT</a>
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+      <a href="https://bsky.app/profile/s0colas.bsky.socials"><i class=" w3-hover-opacity"><img src="assets/bluesky-brands-solid.svg" width="20px" alt="Profile Icon" class="icon"></i></a>
+      <a href="https://www.twitter.com/s0colas"><i class=" w3-hover-opacity"><img src="assets/twitter-brands-solid.svg" width="20px" alt="Profile Icon" class="icon"></i></a>
+      <a href="https://www.instagram.com/s0colas"><i class=" w3-hover-opacity"><img src="assets/instagram-brands-solid.svg" width="20px" alt="Profile Icon" class="icon"></i></a>
+      <a href="https://www.tumblr.com/s0colas"><i class=" w3-hover-opacity"><img src="assets/tumblr-brands-solid.svg" width="20px" height="20px" alt="Profile Icon" class="icon"></i></a>
+      
+       
+      <!--<a href="https://ko-fi.com/s0colas">ko-fi</a>-->
+      <a href="https://ko-fi.com/s0colas"><img src="assets/kofi_symbol.svg" width="25px"  class="icon w3-hover-opacity"></a>
+      <a href="https://www.inprnt.com/profile/kneeprint/"><img src="assets/inprnt-seeklogo.svg" width="40px" class="icon w3-hover-opacity"></a>
+      <!--<a href="https://www.inprnt.com/profile/kneeprint/">INPRINT</a>-->
 
       <!--<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
     </footer>
      
     <script>
-    // Toggle grid padding
-    function myFunction() {
-      var x = document.getElementById("myGrid");
-      if (x.className === "w3-row") {
-        x.className = "w3-row-padding";
-      } else { 
-        x.className = x.className.replace("w3-row-padding", "w3-row");
-      }
-    }
-    
-    // Open and close sidebar
-    function w3_open() {
-      document.getElementById("mySidebar").style.width = "100%";
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
+      // Add fade-in effect once images are fully loaded
+      window.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.fade-in');
+        images.forEach(img => {
+          // Check if the image is already loaded (e.g., cached images)
+          if (img.complete) {
+            img.classList.add('loaded');
+          } else {
+            // If not loaded yet, wait for it to load
+            img.onload = function() {
+              img.classList.add('loaded');
+            };
+          }
+        });
+      });
     </script>
+    
     
     </body>
     </html>
