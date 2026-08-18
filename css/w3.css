@@ -1,6 +1,90 @@
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* My own additions */
+/*.gallery-image{
+    
+  }*/
+
+:root {
+  --main-color: #c2e863;
+}
+  
+.gallery-image.loaded {
+    opacity: 1;
+  }
+  
+  .profcard {
+  background-color:yellowgreen;max-width:980px;margin-top:128px;
+    flex-wrap: wrap;
+  padding: 12px;
+}
+
+/* https://github.com/raulterhesdev/filterable-masonry-gallery-youtube/blob/main/style.css */
+#filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px;
+}
+
+.about-container {
+  flex-wrap: wrap;
+  padding: 12px;
+}
+
+
+
+
+.filter-element {
+  background-color: #ffffff;
+  color: rgb(102, 102, 102);
+  padding: 12px 24px;
+  border-radius: 20px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.filter-element:hover {
+  background-color: #758488aa;
+}
+
+.filter-active {
+  background-color: var(--main-color);
+}
+
+
+#gallery-container {
+  width: 90%;
+  margin: 0 auto;
+  column-count: 3;
+  column-gap: 0.5rem;
+}
+
+.gallery-image {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.gallery-image.hide-image {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  #gallery-container {
+    column-count: 2;
+  }
+}
+/*var(.filter-active)*/
+.exlink {
+color: var(--main-color);
+text-decoration: none;
+}
+
+  
+/* May be unused */
 img.fade-in {
     opacity: 0;
     transition: opacity 1s ease-in;
@@ -10,7 +94,6 @@ img.fade-in {
     opacity: 1;
   }
 
-  
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
